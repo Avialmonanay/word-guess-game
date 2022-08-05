@@ -1,11 +1,12 @@
-function myfunction(){
+var timerEl = document.getElementById('countdown')
+const PGbtn = document.getElementById('playGame')
+
 
 let lossScore = 0;
 let winScore = 0;
 
 
-var timerEl = document.getElementById('countdown')
-const PGbtn = document.getElementById('playGame')
+
 
 
 function countdown() {
@@ -52,7 +53,10 @@ function countdown() {
         }
         
 
-    PGbtn.addEventListener("click", countdown());
+        PGbtn.addEventListener("click", function (e) {
+            console.log("clicked")
+            countdown()
+        })
+
  
-    }
 
