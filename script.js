@@ -33,8 +33,7 @@ function countdown() {
 
   function gameover() {
             
-            console.log("game over")
-            console.log(lossScore)
+
             const lossScoreBoard = document.getElementById('loss')
             lossScore++;
             lossScoreBoard.textContent = lossScore;
@@ -54,7 +53,6 @@ function countdown() {
         
 
         PGbtn.addEventListener("click", function (e) {
-            console.log("clicked")
             countdown()
         })
 
